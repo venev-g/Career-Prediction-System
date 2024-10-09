@@ -318,7 +318,7 @@ def main():
   st.write(coding_skills_rating)
 
   hackathons = st.slider(
-    'Enter number of Hackathons participated',0,10,1)
+    'Rate your Aptitude skill',0,10,1)
   st.write(hackathons)
 
   public_speaking_points = st.slider(
@@ -326,25 +326,25 @@ def main():
   st.write(public_speaking_points)
 
   self_learning_capability = st.selectbox(
-    'Self Learning Capability',
+    'Can you self learn',
     ('Yes', 'No')
     )
   # st.write('You selected:', self_learning_capability)
 
   Extra_courses_did = st.selectbox(
-    'Extra courses',
+    'Do you participate in extracurricular activities',
   ('Yes', 'No')
   )
   # st.write('You selected:', Extra_courses_did)
 
   Taken_inputs_from_seniors_or_elders = st.selectbox(
-    'Took advice from seniors or elders',
+    'Do you frequently need guidance',
     ('Yes', 'No')
     )
   # st.write('You selected:', Taken_inputs_from_seniors_or_elders)
 
   worked_in_teams_ever = st.selectbox(
-    'Team Co-ordination Skill',
+    'Are you a team player',
     ('Yes', 'No')
     )
   # st.write('You selected:', worked_in_teams_ever)
