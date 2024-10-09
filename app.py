@@ -438,6 +438,10 @@ def main():
     st.success("Predicted Career Option : "
                "{}".format(result))
 
+    # Change the name of the column "hackathons" to "aptitude skills"
+    df.rename(columns={'hackathons':'aptitude skills'},inplace=True)
+
+    
     # Plot
     corr = df[['Logical quotient rating', 'hackathons', 
            'coding skills rating', 'public speaking points']].corr()
