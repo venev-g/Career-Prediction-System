@@ -443,7 +443,7 @@ def main():
 
     
     # Plot
-    corr = df[['Logical quotient rating', 'hackathons', 
+    corr = df[['Logical quotient rating', 'aptitude skills', 
            'coding skills rating', 'public speaking points']].corr()
     f,axes = plt.subplots(1,1,figsize = (10,10))
     sns.heatmap(corr,square=True,annot = True,linewidth = .4,center = 2,ax = axes)
